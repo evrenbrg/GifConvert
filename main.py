@@ -8,6 +8,7 @@ size = (128, 128)
 
 with Image.open(infile) as im:
     im.save(outfile)
+    print("Dosya Oluştu\n")
     im.thumbnail(size)
     im.save(outfile2, "JPEG")
-    print("işlem tamam")
+    print("Thumbnail oluştu...")
